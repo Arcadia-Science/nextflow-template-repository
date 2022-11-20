@@ -57,12 +57,13 @@ jobs:
             github_username="$(echo $INFO | jq -r .repository.owner.login)" \
             author_name="$(echo $INFO | jq -r .repository.owner.name)"
           popd
+          # Delete the .github directory, it has served its purpose
+          rm -f .github/
+          shopt -s dotglob
           # Move generated content to root directory of repo
           mv /tmp/$REPO_NAME/* .
-          # And .gitignore too:
-          mv /tmp/$REPO_NAME/.gitignore .
-          # Delete the setup.yml workflow, it has served its purpose
-          rm .github/workflows/setup.yml
+          # Rename .github to github to escape GitHub action permission issues
+          mv .github github
 
       - name: Force push new repo contents
         uses: stefanzweifel/git-auto-commit-action@v4
