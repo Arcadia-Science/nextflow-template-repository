@@ -16,4 +16,4 @@ You can start [here](https://github.com/Arcadia-Science/nextflow-template-reposi
 - Add a one-line description of your pipeline, then click "Create repository from template".
 - Make sure to check "Include all branches". This will make following the `nf-core` guidelines easier.
 
-Once created, your new repository will execute a GitHub Actions workflow that uses cookiecutter to rewrite the repository to the desired state. This may take 30 seconds or so.
+Once created, your new repository will execute a GitHub Actions workflow that uses cookiecutter to rewrite the repository to the desired state. This may take 30 seconds or so. Once the action is done, please rename the `github` directory to `.github`. This is a short-term hack to circumvent GitHub action permission issues.
