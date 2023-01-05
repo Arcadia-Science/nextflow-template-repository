@@ -41,7 +41,6 @@ jobs:
               name: context.repo.repo
             }
             const result = await github.graphql(query, variables)
-            console.log(result)
             return result
 
       - name: Rebuild contents using cookiecutter
@@ -58,7 +57,7 @@ jobs:
             author_name="$(echo $INFO | jq -r .repository.owner.name)"
           popd
           # Delete the .github directory, it has served its purpose
-          rm -f .github/
+          rm -rf .github/
           shopt -s dotglob
           # Move generated content to root directory of repo
           mv /tmp/$REPO_NAME/* .
