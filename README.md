@@ -1,6 +1,6 @@
 # Template repository for creating new Nextflow pipelines
 
-This GitHub [template repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template) can be used to create a new repository with the skeleton of a [Nextflow](https://www.nextflow.io/) pipelines, based on the [nextflow-template](https://github.com/Arcadia-Science/nextflow-template) cookiecutter repository.
+This GitHub [template repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template) can be used to create a new repository with the skeleton of a [Nextflow](https://www.nextflow.io/) pipeline, based on the [nextflow-template](https://github.com/Arcadia-Science/nextflow-template) cookiecutter repository.
 
 ## Credit
 
