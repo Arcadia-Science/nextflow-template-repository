@@ -17,3 +17,9 @@ You can start [here](https://github.com/Arcadia-Science/nextflow-template-reposi
 - Make sure to check "Include all branches". This will make following the `nf-core` guidelines easier.
 
 Once created, your new repository will execute a GitHub Actions workflow that uses cookiecutter to rewrite the repository to the desired state. This may take 30 seconds or so. Once the action is done, please rename the `github` directory to `.github`. This is a short-term hack to circumvent GitHub action permission issues.
+
+## Common issues
+
+Depending on the workflow permissions for GitHub actions on your new repository, the setup may fail. To fix, please go to Settings > Actions > General on your new repo. Scroll to the bottom of the page, choose "Read and write permissions" under the "Workflow permissions" section, and hit "Save". Once you retry the action, the setup should work. This setting is easy to configure as default for organizations, but sadly not for individuals.
+
+![Correct workflow permissions for GitHub actions](./permissions.png)

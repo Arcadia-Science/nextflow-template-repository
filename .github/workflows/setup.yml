@@ -8,6 +8,10 @@ jobs:
   setup-repo:
     if: ${{ github.repository != 'Arcadia-Science/nextflow-template-repository' }}
     runs-on: ubuntu-latest
+
+    permissions:
+      actions: write
+
     steps:
       - uses: actions/checkout@v3
         with:
