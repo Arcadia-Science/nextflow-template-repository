@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      actions: write
+      contents: write
 
     steps:
       - uses: actions/checkout@v3
@@ -68,8 +68,13 @@ jobs:
           # Rename .github to github to escape GitHub action permission issues
           mv .github github
 
-      - name: Force push new repo contents
+      - name: Force push to main
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Initial library structure"
-          push_options: --force
+          push_options: "--force"
+
+      - name: Create new TEMPLATE branch
+        run: |
+          git branch TEMPLATE
+          git push origin TEMPLATE --force
