@@ -12,6 +12,14 @@ The GitHub action will also create a `TEMPLATE` branch that's used by `nf-core` 
 
 This is fully inspired by the following blog post: https://simonwillison.net/2021/Aug/28/dynamic-github-repository-templates/. The README instructions here are modified from [this GitHub repository](https://github.com/simonw/click-app-template-repository).
 
+This cookiecutter template is based off of the `nf-core` template. You can cite the `nf-core` publication as follows:
+
+> **The nf-core framework for community-curated bioinformatics pipelines.**
+>
+> Philip Ewels, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso & Sven Nahnsen.
+>
+> _Nat Biotechnol._ 2020 Feb 13. doi: [10.1038/s41587-020-0439-x](https://dx.doi.org/10.1038/s41587-020-0439-x).
+
 ## Usage
 
 You can click on the "Use this template" button on this repository and follow the prompts. Alternatively, you can start [here](https://github.com/Arcadia-Science/nextflow-template-repository/generate) and follow the prompts. Please follow these instructions:
